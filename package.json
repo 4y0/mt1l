@@ -1,0 +1,25 @@
+{
+  "name": "mt1l",
+  "version": "0.0.0",
+  "description": "Simple express (api) utility functions",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4y0/mt1l.git"
+  },
+  "keywords": [
+    "expressjs"
+  ],
+  "author": "4y0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/4y0/mt1l/issues"
+  },
+  "homepage": "https://github.com/4y0/mt1l#readme"
+}
