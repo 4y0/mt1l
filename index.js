@@ -127,7 +127,7 @@ function scaffoldRoute(handler, middlewares, router){
 
 }
 
-MWV_UTILS.buildRoutes = function(handlers, middlewares, router){
+EXPRESS_UTILS.buildRoutes = function(handlers, middlewares, router){
 
 	var handler_names = Object.keys(handlers);
 	if(handler_names.length){
