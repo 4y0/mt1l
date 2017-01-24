@@ -1,5 +1,4 @@
 "use strict";
-var q = require('q'); 
 var EXPRESS_UTILS = {};
 
 function json_send(res, data, message, status, status_code, meta){
