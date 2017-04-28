@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/4y0/mt1l/issues"
   },
-  "homepage": "https://github.com/4y0/mt1l#readme"
+  "homepage": "https://github.com/4y0/mt1l#readme",
+  "dependencies": {
+    "underscore": "1.8.3"
+  }
 }

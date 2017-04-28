@@ -1,4 +1,5 @@
 "use strict";
+var _ = require('underscore');
 var EXPRESS_UTILS = {};
 
 function json_send(res, data, message, status, status_code, meta){
@@ -102,6 +103,8 @@ function unfurlConfig(handler, config, middlewares, router){
 
 }
 
+
+
 function scaffoldRoute(handler, middlewares, router){
 	
 	//If config is not an array of route info
@@ -126,6 +129,23 @@ function scaffoldRoute(handler, middlewares, router){
 	return router;
 
 }
+
+
+EXPRESS_UTILS.coalesce = function (destination, sources) {
+
+	var _destination = _.clone(destination);
+	var _sources = [].concat(sources);
+
+	_sources
+	.forEach( (source) => {
+
+		_.extend(_destination, source);
+
+	});
+
+	return _destination;
+
+} 
 
 EXPRESS_UTILS.buildRoutes = function(handlers, middlewares, router){
 
