@@ -30,6 +30,22 @@ EXPRESS_UTILS.er = function (message, code){
 
 }
 
+EXPRESS_UTILS.erx = function (code, message, extras){
+
+	code = code || "ERR_ENT";
+	message = message || "Some error occured";
+
+	var erx_err = new Error(message);
+	erx_err.code = code;
+
+	for(var property in extras){
+		erx_err[property] = extras[property];
+	}
+
+	return erx_err;
+
+}
+
 
 EXPRESS_UTILS.jsonS = function (res, data, message, meta) {
 	json_send(res, data, message, 'success', 200, meta);
